@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="square figure" id="hidden_square"></div>
+    <div class="circle figure" id="hidden_circle"></div>
+    <div class="rectangle figure" id="hidden_rectangle"></div>
+    <select id="main" name="main" class="main_field" aria-required="true">
+      <option value="default"></option>
+      <option value="one">Square</option>
+      <option value="two">Circle</option>
+      <option value="three">Rectangle</option>
+    </select>
+
+    <input type="color" name="figure_color" id="color" value="#000000" />
+    <button class="color" id="color_button">Confirm Color</button>
+  </body>
+</html>
