@@ -9,14 +9,12 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="square figure" id="hidden_square"></div>
-    <div class="circle figure" id="hidden_circle"></div>
-    <div class="rectangle figure" id="hidden_rectangle"></div>
+    <div class="figure square circle rectangle" id="figure_select"></div>
     <select id="main" name="main" class="main_field" aria-required="true">
       <option value="default"></option>
-      <option value="one">Square</option>
-      <option value="two">Circle</option>
-      <option value="three">Rectangle</option>
+      <option value="square">Square</option>
+      <option value="circle">Circle</option>
+      <option value="rectangle">Rectangle</option>
     </select>
 
     <input type="color" name="figure_color" id="color" value="#000000" />

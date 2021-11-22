@@ -1,29 +1,19 @@
-document.getElementById('main').addEventListener('change', function () {
-  var style = this.value == 'one' ? 'block' : 'none';
-  document.getElementById('hidden_square').style.display = style;
+const main = document.getElementById('main');
 
-  var style = this.value == 'two' ? 'block' : 'none';
-  document.getElementById('hidden_circle').style.display = style;
+let input = document.getElementById('color');
 
-  var style = this.value == 'three' ? 'block' : 'none';
-  document.getElementById('hidden_rectangle').style.display = style;
+const button = document.getElementById('color_button');
+
+let figure = document.getElementById('figure_select');
+
+
+
+main.addEventListener('change', (event) => {
+
+  figure.className = main.value;
 });
 
-var colorInput = document.getElementById('color');
-var colorFigureSquare = document.getElementsByClassName('figure')[0];
-var colorFigureCircle = document.getElementsByClassName('figure')[1];
-var colorFigureRectangle = document.getElementsByClassName('figure')[2];
+button.addEventListener('click', function (event) {
 
-colorFigureSquare.style.backgroundColor = colorInput.value;
-colorFigureCircle.style.backgroundColor = colorInput.value;
-colorFigureRectangle.style.backgroundColor = colorInput.value;
-
-document.getElementById('color_button').addEventListener(
-  'click',
-  function () {
-    colorFigureSquare.style.backgroundColor = colorInput.value;
-    colorFigureCircle.style.backgroundColor = colorInput.value;
-    colorFigureRectangle.style.backgroundColor = colorInput.value;
-  },
-  false
-);
+  figure.style.backgroundColor = input.value;
+})
